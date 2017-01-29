@@ -9,6 +9,7 @@ I first created a dictionary to store naked twins values, then tried to see to w
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
 A: Add new unit containing diagnol boxes to existing row, column and 3*3 units.
+In the normal sudoku solution, code was checking 3 conditions, each row, each column, and each of the 9 principal 3x3 subsquares should contain all of the digits from 1 to 9. So, all the possible combinations of units were stored and elimination/only choice/naked twins/search were taking these units into consideration. In the case of diagonal sudoku, we have to make sure that among the two main diagonals, the numbers 1 to 9 should all appear exactly once. So, I added a new unit called diagonal_units that had the diagnol box names in the form a list. By doing this we are making sure that the functions are taking this condition into consideration as well.
 
 ### Install
 
