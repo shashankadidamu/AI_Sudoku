@@ -3,11 +3,12 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: If there are two boxes with same two possible values, we go over all the boxes in their same unit, and remove the values.
+I first created a dictionary to store naked twins values, then tried to see to which unit the two boxes belong to. After getting to know the unit , iterated through the boxes present in the unit and updated the values. 
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Add new unit containing diagnol boxes to existing row, column and 3*3 units.
 
 ### Install
 
